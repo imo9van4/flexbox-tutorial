@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Practice</title>
+    <style>
+      .boxes {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .container-red {
+        display: flex;
+        background-color: red;
+        color: white;
+        height: 30vh;
+        width: 25vw;
+        text-align: center;
+        align-self: flex-end;
+      }
+      #red {
+        display: flex;
+        order: 3;
+      }
+      .container-blue {
+        display: flex;
+        background-color: blue;
+        color: white;
+        height: 30vh;
+        width: 25vw;
+        text-align: center;
+      }
+      #blue {
+        display: flex;
+        order: 4;
+      }
+      .container-yellow {
+        display: flex;
+        background-color: yellow;
+        height: 30vh;
+        width: 25vw;
+        text-align: center;
+      }
+      #yellow {
+        display: flex;
+        order: 1;
+      }
+      .container-green {
+        display: flex;
+        background-color: green;
+        color: white;
+        height: 30vh;
+        width: 25vw;
+        text-align: center;
+      }
+      #green {
+        display: flex;
+        order: 2;
+      }
+      p {
+        display: flex;
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="container-red" id="red">
+        <p>Red Flexbox Box</p>
+      </div>
+      <div class="container-blue" id="blue">
+        <p>Blue Flexbox Box</p>
+      </div>
+      <div class="container-yellow" id="yellow">
+        <p>Yellow Flexbox Box</p>
+      </div>
+      <div class="container-green" id="green">
+        <p>Green Flexbox Box</p>
+      </div>
+    </div>
+  </body>
+</html>
